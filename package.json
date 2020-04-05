@@ -1,0 +1,30 @@
+{
+  "name": "mern-shopping-list",
+  "version": "1.0.0",
+  "description": "MERN stack shopping list",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colinjcason/MERN-shopping-list.git"
+  },
+  "author": "Colin James",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colinjcason/MERN-shopping-list/issues"
+  },
+  "homepage": "https://github.com/colinjcason/MERN-shopping-list#readme",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
